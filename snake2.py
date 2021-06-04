@@ -10,7 +10,7 @@ hi_score = 0
 
 # prueba en git
 alto=25
-ancho=100
+ancho=50
 pantalla = curses.initscr()
 
 puntuación = 0
@@ -80,9 +80,8 @@ while True:
     elif tecla==curses.KEY_DOWN:
         mov_horizontal = 0
         mov_vertical = 1
-    elif tecla==10:
-        break
-    
+    elif tecla== 10
+        
     x = (x + mov_horizontal) % ancho
     y = (y + mov_vertical) % alto
 
@@ -108,12 +107,13 @@ while True:
         ultimaposicion = snake.pop()
         pantalla.addstr(ultimaposicion[0],ultimaposicion[1]," ")
 
+
     #else:  
     #    ultimaposicion = snake.pop()
     #    pantalla.addstr(ultimaposicion[0],ultimaposicion[1]," ")
     #dibujamos la cabeza
         pantalla.addstr(snake[0][0],snake[0][1],"#")
-        pantalla.addstr(snake[0][0], snake[0][1],"ñ")
+    #   pantalla.addstr(snake[0][0], snake[0][1],"ñ")
 
     #pantalla.addstr(y,x, "#")   
 #Ponemos todo en su lugar    
