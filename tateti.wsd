@@ -1,0 +1,20 @@
+@startuml tateti
+class jugadores {
+    string: nombre
+    string: "o-x"
+}    
+
+class registro {
+    string: nombre jugador_1
+    string: nombre jugador_2
+    
+}
+class tablero {
+    string: columnas
+    date: filas 
+    string: x-o
+}
+
+jugadores "1" o-- "1" registro: se registran
+registro "1" o-- "1" tablero: pueden jugar
+@enduml
