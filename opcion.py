@@ -1,10 +1,10 @@
-seguir = ""
-while seguir!= "n" or seguir!="s":
-    seguir= input("quiere volver a jugar(s/n): ")
-    if seguir == "n":
+sigue = ""
+while sigue!= "n" or sigue!="s":
+    sigue= input("quiere volver a jugar(s/n): ")
+    if sigue == "n":
         jugando = false
         break
-    elif seguir == "s":
+    elif sigue == "s":
         break
     else:
         print ("No te he entendido") 
